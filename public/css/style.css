@@ -1,0 +1,387 @@
+/* General Styles (all sizes)
+
+/* General Typography ------------------------------ */
+
+body {
+	font-family: 'PT Serif', serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 20px;
+	line-height: 2rem;
+	color: rgb(98,98,98);
+}
+
+sup { 
+	height: 0; 
+	line-height: 1;
+	bottom: 1em;
+	font-size: .7em;
+	color: #666;
+	position: relative;
+}
+
+sup a { padding: 3px; -webkit-transition-property: color; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease; }
+sup a:hover { border: 0; }
+
+
+h1, h2, h3{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1 {
+	font-size: 72px;
+	font-size: 4.5rem;
+    line-height: 5rem;
+	color: rgb(56,56,56);
+	text-align: center;
+}
+
+h2 {
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 20px;
+	margin-bottom: 5rem;
+	color: #626262;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
+	margin-top: 21px;
+	margin-top: 4rem;
+	color: rgb(56,56,56);
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+    margin-bottom: 1.3rem;
+}
+
+h4 {
+	font-family: 'PT Serif', serif;
+	font-size: 11px;
+	font-size: 1.1rem;
+	text-align: center;
+	font-weight: normal;
+	color: #ABABAB;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+blockquote {
+	margin: 0 2em 1em;
+	color: #333;
+}
+
+cite {
+	display: inline-block;
+	margin-bottom: 10px;
+	line-height: 1.6;
+}
+
+h2 + *, h3 + *, h4 + * {
+	margin-top: 20px;
+	margin-top: 2rem;
+}
+
+h2 + p, h3 + p, h4 + p {
+	margin-top: 0;
+}
+
+a {
+	color: rgb(77,148,204);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(37,108,164);
+	text-decoration: underline;
+}
+
+/* Layout ------------------------------ */
+
+.headfill { 
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.lmblaunch { 
+	text-align: center; 
+	font-family: 'PT Sans Caption', sans-serif; 
+	font-size: 1.8rem; 
+}
+/*.lmblaunch a { padding: 20px; background-color: #fff; border-radius: 3px; }
+.lmblaunch a:hover { text-decoration: none; background-color: #ddd; }*/
+
+
+.lmblaunch a {
+  display: inline-block;
+  background-color: #f7f7f7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  color: rgb(77,148,204);
+  margin: 36px;
+  width: auto;
+  height: auto;
+  position: relative;
+  text-shadow: 1px 1px 0px #fff;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 15px;
+  box-shadow: 0px 3px 2px #ddd, inset 0px 2px 1px #fff;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+}
+
+.lmblaunch a:before {
+  content: "";
+  display: block;
+  background: #fff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  bottom: -18px;
+  right: -18px;
+  z-index: -1;
+  box-shadow: inset 0px 8px 48px #ddd;
+}
+
+.lmblaunch a:hover {
+  text-decoration: none;
+  color: #555;
+  /*background: #f5f5f5;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f5f5f5));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f5f5f5); 
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f5f5f5); 
+  background-image: -ms-linear-gradient(top, #f5f5f5, #f5f5f5); 
+  background-image: -o-linear-gradient(top, #f5f5f5, #f5f5f5); 
+
+}
+
+
+.footnotes {
+	font-size: .8em;
+	border-top: 2px dotted #fff;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.footnotes h3 { 
+	font-size: 1.4em;
+}
+
+.bookmarklets { text-align: center; }
+
+.bookmarklets .d1, .bookmarklets .d2, .bookmarklets .d-all {  
+	border: 1px solid #ddd;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	min-height: 200px;
+	background-color: #fff;
+}
+
+.bookmarklets h4 { 
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.bookmarklets a { 
+	font-family: 'PT Sans Narrow', sans-serif;
+	border-radius: 10px; 
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+}
+
+.bookmarklets a:hover { 
+	background-color: #ddd;
+	text-decoration: none;
+}
+
+.bookmarklets input { 
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid #ddd;
+	font-size: 1.2rem;
+}
+
+.bookmarklets input:hover { 
+	cursor: text;
+}
+
+ul.generalresources { 
+	
+}
+
+
+cite, nav, footer p{
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+}
+
+header h1 a {
+    background: url("../images/logo.png") no-repeat;
+    background-position: center;
+    display: block;
+    height: 130px;
+    margin: 0;
+    text-indent: -9999px;
+}
+
+nav {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+	
+nav ul li {  
+	display: inline-block;
+	margin-right: 15px;
+}
+
+nav ul li a {  
+	font-size: 1.8rem;
+	padding: 3px 10px;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+nav ul li a:hover {  
+	background-color: #ddd;
+	text-decoration: none;
+}
+
+nav ul li.selected a { border: 1px solid #ddd; box-shadow: inset 0 0 3px #ddd; }
+
+nav ul li.lmb { 
+	clear: both;
+	display: block;
+	margin-bottom: 20px;
+}
+
+p.standfirst{
+	font-weight: bold;
+}
+
+.related{
+	margin-top: 30px;
+}
+
+ul li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.resources ul li { 
+	list-style: circle;
+}
+
+ul li a {
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+footer{
+	margin: 40px 0;
+}
+
+footer p{
+	text-align: center;
+	margin-bottom: 0;
+}
+
+img{
+	width: 99%;
+	height: auto;
+	border: 3px solid #eeeeee;
+}
+
+.date{
+	margin-top: 10px;
+}
+
+.button {
+	font-family: 'PT Sans Narrow', sans-serif;
+	
+	-moz-box-shadow:inset 0px 1px 0px 1px #76aacc;
+	-webkit-box-shadow:inset 0px 1px 0px 1px #76aacc;
+	box-shadow:inset 0px 1px 0px 1px #76aacc;
+	
+	background-color:#4d95cc;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	
+	border-radius:6px;
+	border:1px solid #4c94c7;
+	
+	display:inline-block;
+	color:#ffffff;
+	padding:6px 24px;
+	text-decoration:none;
+}
+
+.button:hover {
+	background-color:#4d95cc;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+#info {
+	margin-top: 40px;
+	border-top: 1px solid #ccc;
+}
+
+/* ----- Interviews Page  ----------- */
+
+.testimony {
+	clear: both;
+	padding: 1em 0;
+}
+
+.member-data {
+	width: 100%;
+	padding-bottom: 2em;
+	margin: 2em 0;
+	border-bottom: 1px solid #CCC;
+}
+.member-data figure {}
+dl.vcard {
+	text-align: center;
+	margin-top: 1em;
+}
+
+dl.vcard dt {
+	font: bold 1.7rem/1.3 'PT Sans Narrow', sans-serif;
+}
+dl.vcard dd {
+	font: 1.9rem/1.3 'PT Sans Narrow', sans-serif;
+	padding-bottom: 0.3em;
+}
+
+p.question {font-weight: bold; font-size: 110%; margin-top: 2.5em;}

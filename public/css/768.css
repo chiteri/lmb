@@ -1,0 +1,59 @@
+/* Query Styles for 768px and up */
+
+.headfill { height: 500px; }
+
+.wrapper{
+	width: 700px;
+	min-width: 700px;
+	margin: 0 auto;
+}
+
+#content { margin-top: -120px; background-color: #f7f7f7; padding: 20px; border-radius: 3px; }
+
+h1 {
+	font-size: 72px;
+	font-size: 7rem;
+	line-height: 90px;
+	line-height: 7rem;
+	text-align: center;
+}
+
+h2{
+	font-size: 3rem;
+	margin-bottom: 5rem;
+	margin-top: 0rem;
+	line-height: 36px;
+	line-height: 3.6rem;
+	text-align: center;
+}
+
+header {
+    padding: 40px 0;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+    margin-bottom: 1.8rem;
+}
+
+
+.lmblaunch a { line-height: 10px; padding: 20px; padding-bottom: 15px; font-size: 1.8rem; }
+
+/* INTERVIEWS */
+.member-data {
+	display: flex;
+}
+.member-data figure {
+	flex: 50%;
+	-webkit-flex: 50%;
+	-moz-flex: 50%;
+	padding-right: 3%;
+}
+dl.vcard {
+	flex: auto;
+	-webkit-flex: auto;
+	-moz-flex: auto;
+	margin: 0;
+	text-align: left;
+}
